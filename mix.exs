@@ -27,13 +27,13 @@ defmodule Verdict.MixProject do
 
   defp deps do
     [
-      {:nx, "~> 0.13"},
+      {:nx, "~> 1.0"},
       {:vega_lite, "~> 0.1.9"},
       {:nimble_options, "~> 1.0"},
-      {:scholar, path: "../scholar", override: true},
+      {:scholar, "~> 0.5.0"},
       {:jason, "~> 1.4", only: [:dev, :test]},
       {:vega_lite_convert, "~> 1.0", only: [:dev, :test]},
-      {:ex_doc, "~> 0.34", only: :docs, runtime: false}
+      {:ex_doc, "~> 0.34", only: :dev, runtime: false}
     ]
   end
 
